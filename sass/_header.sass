@@ -1,0 +1,89 @@
+.header
+	background: url('../img/header_bg.png') no-repeat
+	background-size: cover
+	color: #fff	
+	&-flex
+		display: flex
+		justify-content: space-between
+	&-book
+		flex-basis: 447px
+	&-img
+		background: url('../img/book_main.png') no-repeat
+		background-size: cover
+		width: 447px
+		height: 643px
+	&_logo
+		background: url('../img/logo.png') no-repeat
+		width: 137px
+		height: 28px
+		display: block
+	&-top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 35px
+	&-list
+		list-style-type: none
+		display: flex
+		justify-content: flex-end
+		font-family: 'Open Sans', sans-serif
+		&_item
+			margin-left: 22px
+			a	
+				color: #fff
+				letter-spacing: 0.5px
+				padding-bottom: 6px
+				margin-top: 3px
+				transition: all 0.4s
+				&:hover
+					border-bottom: 3px solid $greens
+			a.active
+				border-bottom: 3px solid $greens
+			&:first-child
+				margin-left: 0
+	&-main
+		padding-top: 100px
+		padding-bottom: 50px
+	&-block
+		flex-basis: calc(100% - 500px)
+		&_title
+			font-size: 48px
+			text-transform: uppercase
+			letter-spacing: 1.8px
+			margin-bottom: 40px
+			span
+				display: block
+				color: $greens
+				font-size: 18px
+				margin-top: 10px
+				letter-spacing: 0.8px
+		&_text
+			font-family: $sanses
+			font-size: 18px
+			letter-spacing: 0.7px
+			margin-bottom: 20px
+
+		&_descr
+			font-family: $sanses
+			font-size: 15px
+			letter-spacing: 0.5px
+			line-height: 24px
+			margin-bottom: 30px
+		&_btn
+			display: block
+			max-width: 250px
+			border-radius: 5px
+			text-align: center
+			background-color: $greens
+			transition: all 0.5s
+			color: #fff
+			font-size: 18px
+			margin-top: 50px
+			padding: 15px 0
+			margin-bottom: 25px
+			&:hover
+				background-color: darken($greens, 10)
+		small
+			font-size: 12px
+			font-style: italic
+			letter-spacing: 0.6px
