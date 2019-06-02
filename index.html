@@ -7,8 +7,11 @@
 	<meta name="keywords" content="Practice site">
 	<meta name="description" content="Bukees site is one of the most popular...">
 	<meta name="author" content="adamaka47">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:100,400,700&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<script src="https://kit.fontawesome.com/a1196c4863.js"></script>
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Bukees</title>
 </head>
@@ -20,22 +23,23 @@
 					<div class="header-top">
 						<a href="#" class="header_logo"></a>
 						<ul class="header-list">
-							<li class="header-list_item"><a href="#" class="active">Home</a></li>
-							<li class="header-list_item"><a href="#">About</a></li>
-							<li class="header-list_item"><a href="#">Contents</a></li>
-							<li class="header-list_item"><a href="#">Books</a></li>
-							<li class="header-list_item"><a href="#">Education</a></li>
-							<li class="header-list_item"><a href="#">Skills</a></li>
-							<li class="header-list_item"><a href="#">Portfolio</a></li>
-							<li class="header-list_item"><a href="#">Clients</a></li>
-							<li class="header-list_item"><a href="#">Contact</a></li>
+							<li class="header-list_item"><a href="#header" class="active">Home</a></li>
+							<li class="header-list_item"><a href="#stat">About</a></li>
+							<li class="header-list_item"><a href="#book">Contents</a></li>
+							<li class="header-list_item"><a href="#other">Books</a></li>
+							<li class="header-list_item"><a href="#feedback">Education</a></li>
+							<li class="header-list_item"><a href="#events">Skills</a></li>
+							<li class="header-list_item"><a href="#blog">Portfolio</a></li>
+							<li class="header-list_item"><a href="#letter">Clients</a></li>
+							<li class="header-list_item"><a href="#footer">Contact</a></li>
 						</ul>
 					</div>
 					<div class="header-main">
 						<div class="header-flex">
 							<div class="header-book">
 								<div class="header-img">
-									
+									<h2>Good Book <span>Don't judge a book its cover</span></h2>
+									<p>By Adam Dasten</p>
 								</div>
 							</div>
 							<div class="header-block">
@@ -54,9 +58,10 @@
 					</div>
 				</div>
 			</header>
-			<section class="stat" id="stat">
+
+			<section class="stat page" id="stat">
 				<div class="container">
-					<div class="stat_info">
+					<div class="stat-info">
 						<div class="stat-block">
 							<p class="stat-block_text">
 								By Adam Dasten
@@ -69,7 +74,10 @@
 							<a href="#" class="btn stat-block_btn">Buy this book - $15.00</a>
 						</div>
 						<div class="stat-img">
-							
+							<div class="stat-gradient">
+								
+							</div>
+							<img src="img/woman_f.jpg" alt="My photo" class="stat-me">
 						</div>
 					</div>
 					<div class="stat-num">
@@ -80,37 +88,37 @@
 				</div>
 			</section>
 
-			<section class="book grey" id="book">
+			<section class="book page" id="book">
 				<div class="container">
 					<h2 class="book_title">Book Contents</h2>
 					<p class="book_text">Let's see what we covered in the book</p>
 					<div class="book-items">
 						<div class="book-left">
 							<h3 class="book-left_title">About the book</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, asperiores.</p>
+							<p class="book-left_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, asperiores.</p>
 							<div class="book-left-list">
 								<p>Featured in:</p>	
-								<ol>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-								</ol>
+								<ul>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+									<li><a href="#"><i class="fab fa-github"></i></a></li>
+								</ul>
 							</div>
 						</div>
 						<div class="book-right">
 							<h3 class="book-right_title">Table of contents</h3>
 							<div class="book-right-list">
 								<ol>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipisicing elit</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipisicing elit</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipisicing elit</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipisicing elit</li>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Consectetur adipisicing elit</li>
 								</ol>
 							</div>
 							<button>More</button>
@@ -119,8 +127,240 @@
 				</div>
 			</section>
 
+			<section class="other page" id="other">
+				<div class="container">
+					<h2 class="other_title">Book Contents</h2>
+					<p class="other_text">Let's see what we covered in the book</p>
+					<div class="other-items">
+						<div class="other-item">
+							<div class="other-img">
+								<h4>Inception<span>Books are the best friends</span></h4>
+								<p>- By Adam Dasten</p>
+							</div>
+							<h5 class="other-item_title">Inception</h5>
+							<p class="other-item_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloremque perspiciatis explicabo dolore, qui voluptas.</p>
+							<a href="#">Read More</a>
+						</div>
+						<div class="other-item">
+							<div class="other-img">
+								<h4>Fight club<span>Books are the best friends</span></h4>
+								<p>- By Adam Dasten</p>
+							</div>
+							<h5 class="other-item_title">Fight club</h5>
+							<p class="other-item_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloremque perspiciatis explicabo dolore, qui voluptas.</p>
+							<a href="#">Read More</a>
+						</div>
+						<div class="other-item">
+							<div class="other-img">
+								<h4>Daredevils<span>Books are the best friends</span></h4>
+								<p>- By Adam Dasten</p>
+							</div>
+							<h5 class="other-item_title">Daredevils</h5>
+							<p class="other-item_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloremque perspiciatis explicabo dolore, qui voluptas.</p>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+					<button class="btn">Browse all books</button>
+				</div>
+			</section>
+
+			<section class="feedback page" id="feedback">
+				<div class="container">
+					<div class="feedback-slider">
+						<div class="feedback-item">
+							<img src="img/feedback1.png" alt="Feedback">
+							<h3>Adam Dasten</h3>
+							<span>Calligraphy Expert</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis autem enim et quam eaque ad impedit doloremque aliquam illum tempora. I recommendate it because my father said me that it is good thing for our population</p>
+						</div>
+						<div class="feedback-item">
+							<img src="img/feedback1.png" alt="Feedback">
+							<h3>Adam Dasten</h3>
+							<span>Calligraphy Expert</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis autem enim et quam eaque ad impedit doloremque aliquam illum tempora. I recommendate it because my father said me that it is good thing for our population</p>
+						</div>
+						<div class="feedback-item">
+							<img src="img/feedback1.png" alt="Feedback">
+							<h3>Adam Dasten</h3>
+							<span>Calligraphy Expert</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis autem enim et quam eaque ad impedit doloremque aliquam illum tempora. I recommendate it because my father said me that it is good thing for our population</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="stat events page" id="events">
+				<div class="container">
+					<div class="stat-info">
+						<div class="stat-img">
+							<div class="stat-gradient">
+								
+							</div>
+							<img src="img/woman_t.jpg" alt="My photo" class="stat-me">
+						</div>
+						<div class="stat-block">
+							<p class="stat-block_text">
+								By Adam Dasten
+							</p>
+							<h1 class="stat-block_title">
+								Upcoming <span>Some upcoming events you might be interested</span>
+							</h1>
+							<div class="stat-block-item">
+								<p class="stat-block-item_date">
+									November 21, 2019
+									<h4 class="stat-block-item_title">
+										Book signing - San francisco, LA
+									</h4>
+									<p class="stat-block_descr">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum saepe at vero ducimus unde nisi blanditiis provident ut quos porro, doloremque laborum libero, officia recusandae repudiandae necessitatibus dolores voluptatem.
+									</p>
+									<a href="#" class="btn stat-block_btn">Register</a>
+								</p>
+							</div>
+							<div class="stat-block-item">
+								<p class="stat-block-item_date">
+									December 27, 2019
+									<h4 class="stat-block-item_title">
+										Book signing - San francisco, LA
+									</h4>
+									<p class="stat-block_descr">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum saepe at vero ducimus unde nisi blanditiis provident ut quos porro, doloremque laborum libero, officia recusandae repudiandae necessitatibus dolores voluptatem.
+									</p>
+									<a href="#" class="btn stat-block_btn">Register</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="blog page" id="blog">
+				<div class="container">
+					<h2 class="blog_title">Latest from Blog</h2>
+					<p class="blog_text">
+						Some of the latest posts from my personal blog
+					</p>
+					<div class="blog-items">
+						<div class="blog-item">
+							<div class="blog-item_img">
+								<img src="img/blog1.jpg" alt="Blog">
+							</div>
+							<div class="blog-item_info">
+								<h4>The tools you need for the perfection</h4>
+								<p class="blog-item_category">By <a href="#">Adam Dasten - June 15, 2019</a></p>
+								<p class="blog-item_descr">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+							</div>
+						</div>
+						<div class="blog-item">
+							<div class="blog-item_img">
+								<img src="img/blog2.jpg" alt="Blog">
+							</div>
+							<div class="blog-item_info">
+								<h4>Knowing the difference is important</h4>
+								<p class="blog-item_category">By <a href="#">Adam Dasten - June 19, 2019</a></p>
+								<p class="blog-item_descr">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+							</div>
+						</div>
+						<div class="blog-item">
+							<div class="blog-item_img">
+								<img src="img/blog3.jpg" alt="Blog">
+							</div>
+							<div class="blog-item_info">
+								<h4>Importance of light in photography</h4>
+								<p class="blog-item_category">By <a href="#">Adam Dasten - June 24, 2019</a></p>
+								<p class="blog-item_descr">Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+							</div>
+						</div>
+					</div>
+					<button class="btn">Read more in the blog</button>
+				</div>
+			</section>
+
+			<section class="letter page" id="letter">
+				<div class="container">
+					<div class="letter-items">
+						<div class="letter-item">
+							<h2 class="letter-item_title">
+								Join Newsletter
+							</h2>
+							<p class="letter-item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quam, exercitationem in nisi rem. Tenetur. Subscribe now and go chilling now because we are the last company of that interesting things!</p>
+						</div>
+						<div class="letter-item">
+							<form>
+								<input type="email" placeholder="Enter your email" required>
+								<button type="submit">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="footer-items">
+						<div class="footer-first">
+							<a href="#"><img src="img/logo.png" alt="Logo"></a>
+							<p class="footer-first_descr">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="footer-first_copy">
+								© 2018 Bukee Private Limited.
+							</p>
+						</div>
+						<div class="footer_second">
+							<h2>Useful Links</h2>
+							<ul>
+								<li><a href="#">About Bukees</a></li>
+								<li><a href="#">Explore Our Ecosystem</a></li>
+								<li><a href="#">Community Meetup</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="footer_third">
+							<h2>Our contacts</h2>
+							<ul class="footer_third_list">
+								<li>Amphitheatre Parkway, CA943</li>
+								<li>Call us on: +4455644777</li>
+								<li>Email: support@bukees.com</li>
+							</ul>
+							<ul class="footer_socials">
+								<li><a href="#"><i class="fab fa-twitch"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-github"></i></a></li>
+								<li><a href="#"><i class="fab fa-vk"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
 		</div>
 	</main>
+
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	  <script src="js/slick.min.js"></script>
+	  <script>
+	  	$('.feedback-slider').slick({
+	  		dots: true,
+	  		arrows: false
+	  	});
+	  </script>
+
+	  <script>
+	  	$(document).ready(function() {
+	  		var navLink = $('.header-list li a');
+	  		navLink.on('click', function(event) {
+	  			event.preventDefault();
+	  			var offs = $(this).attr("href");
+	  			var top = $(offs).offset().top;
+	  			$('html, body').animate({scrollTop: top}, 2000)
+	  		});
+	  	});
+	  </script>
+
+	
 
 </body>
 </html>

@@ -1,0 +1,49 @@
+.feedback
+	text-align: center
+	background-color: #333
+	img
+		margin: 0 auto
+		margin-bottom: 20px
+	h3
+		color: $greens
+		font-size: 20px
+		margin-bottom: 10px
+	span
+		display: block
+		color: #9191b5
+		font-family: $sanses
+		margin-bottom: 40px
+	p
+		font-weight: 100
+		color: #9191b5
+		letter-spacing: 0.75px
+		max-width: 800px
+		margin: 0 auto
+		line-height: 1.8
+	.slick-slide
+		outline: none
+	.slick-dots 
+		padding: 0
+		bottom: -60px
+		li.slick-active
+			&>button
+				&::before
+					width: 36px
+					border-radius: 10px
+					opacity: 1
+		li
+			margin: 0 15px
+			button
+				&::before
+					font-size: 0
+					width: 12px
+					height: 12px
+					background-color: $greens
+					border-radius: 50%
+					font-size: 0
+					line-height: 0
+					cursor: pointer
+					transition: all 0.6s
+					opacity: 1
+
+

@@ -1,0 +1,65 @@
+.events
+	color: #444
+	.stat
+		&-gradient
+			background-image: -moz-linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+			background-image: -webkit-linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+			background-image: -ms-linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+			background-image: linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+			display: block
+			width: 440px
+			height: 706px
+			position: absolute
+			z-index: -1
+		&-me
+			position: relative
+			margin-top: 50px
+			left: 40px
+		&-info
+			display: flex
+			justify-content: space-between
+		&-block
+			flex-basis: calc(100% - 600px)
+			&-item
+				margin-bottom: 60px
+				&_date
+					font-family: $sanses
+					font-size: 15px
+					letter-spacing: 0.6px
+					margin-bottom: 10px
+				&_title
+					margin-bottom: 20px
+					font-weight: 700
+					font-size: 18px
+					letter-spacing: 0.8px
+			&_descr
+				@extend .header-block_descr
+				margin: 0
+				margin-bottom: 20px
+				line-height: 1.6
+			&_title
+				@extend .header-block_title
+			&_text
+				@extend .header-block_text
+				margin: 0
+			&_btn
+				width: 140px
+				margin: 0
+
+		&-num
+			margin-top: 150px
+			display: flex
+			justify-content: space-around
+			p
+				display: flex
+				flex-direction: column
+				text-align: center
+				font-family: $sanses
+				font-size: 18px
+				span
+					color: $greens
+					font-size: 80px
+					font-weight: 100
+					font-family: 'Roboto Slab', serif
+					margin-bottom: 10px
+					

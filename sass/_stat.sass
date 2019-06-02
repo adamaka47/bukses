@@ -1,0 +1,97 @@
+.stat
+	&-gradient
+		background-image: -moz-linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+		background-image: -webkit-linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+		background-image: -ms-linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+		background-image: linear-gradient( 150deg, rgb(90,202,177) 0%, rgb(66,99,132) 100%)
+		display: block
+		width: 435px
+		height: 558px
+		position: absolute
+		z-index: -1
+	&-me
+		position: relative
+		margin-top: 40px
+		right: 40px
+	&-info
+		display: flex
+		justify-content: space-between
+	&-block
+		flex-basis: calc(100% - 550px)
+		&_descr
+			@extend .header-block_descr
+			margin-top: 20px
+		&_title
+			@extend .header-block_title
+		&_text
+			 @extend .header-block_text
+			 margin: 0
+	&-num
+		margin-top: 150px
+		display: flex
+		justify-content: space-around
+		p
+			display: flex
+			flex-direction: column
+			text-align: center
+			font-family: $sanses
+			font-size: 18px
+			span
+				color: $greens
+				font-size: 80px
+				font-weight: 100
+				font-family: 'Roboto Slab', serif
+				margin-bottom: 10px
+
+@media (max-width: 991.98px)
+	.stat
+		&-info
+			flex-direction: column
+		&-block
+			text-align: center
+			margin-top: 60px
+			order: 5
+			&_descr
+				margin-left: auto
+				margin-right: auto
+			.btn
+				margin: 0 auto
+		&-gradient
+			position: static
+			display: none
+		&-me
+			right: auto
+			position: static
+			margin: 0 auto
+		&-num
+			flex-direction: column
+			margin-top: 80px
+			p
+				margin-bottom: 40px
+				span
+					font-size: 72px
+				
+
+@media (max-width: 991.98px)
+	.events
+		.stat
+		.stat-info
+			text-align: center
+			.stat-gradient
+				display: none
+			.stat-me
+				position: static
+				margin-top: 0
+			.stat-block-item
+				margin-bottom: 70px
+				&_title
+					font-size: 14px
+					line-height: 2
+				&:last-child
+					margin-bottom: 0
+			.stat-block
+				&_descr
+					margin: auto
+					margin-bottom: 30px
+				a
+					margin: auto

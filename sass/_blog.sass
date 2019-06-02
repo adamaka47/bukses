@@ -1,0 +1,62 @@
+.blog
+	background-color: #f1f1f1
+	color: #444
+	.btn
+		width: 270px
+		border: none
+		display: block
+		margin: auto
+		margin-top: 50px
+		cursor: pointer
+		box-shadow: none
+	&_title
+		@extend .book_title
+	&_text
+		@extend .book_text
+	&-items
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-item
+		margin: 20px 0
+		flex-basis: 31%
+		&_category
+			margin: 0
+			margin-top: 15px
+			font-size: 15px
+			letter-spacing: 1.2px
+			margin-bottom: 20px
+			font-family: $sanses
+		&_descr
+			font-family: $sanses
+			font-size: 15px
+			line-height: 1.5
+			letter-spacing: 0.65px
+		&_info
+			margin-top: 20px
+			h4
+				font-size: 18px
+				letter-spacing: 1.2px
+
+		a
+			color: $greens
+			&:hover
+				text-decoration: underline
+
+@media (max-width: 991.98px)
+	.blog
+		.btn
+			width: 220px
+		&-items
+			flex-direction: column
+			text-align: center
+		&-item
+			margin-bottom: 50px
+			&:last-child
+				margin-bottom: 0
+			img
+				margin: 0 auto
+				margin-bottom: 40px
+			&_descr
+				max-width: 550px
+				margin: auto

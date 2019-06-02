@@ -1,0 +1,90 @@
+.footer
+	background-color: #333
+	color: #9191b5
+	padding: 140px 0
+	&-first
+		flex-basis: 32%
+		a
+			margin-bottom: 30px
+		&_descr
+			font-size: 15px
+			line-height: 24px
+			letter-spacing: 0.6px
+			margin: 0
+			margin-bottom: 30px
+			font-family: $sanses
+		&_copy
+			font-size: 15px
+			margin: 0
+			letter-spacing: 0.6px
+			font-family: $sanses
+	&_second
+		flex-basis: 20%
+		ul
+			li
+				a
+					font-size: 15px
+					color: #9191b5
+					line-height: 24px
+					font-family: $sanses
+					letter-spacing: 0.6px
+					&:hover
+						color: #fff
+	&_third
+		flex-basis: 24%
+		&_list
+			line-height: 24px
+			font-size: 15px
+			margin: 0
+			margin-bottom: 3px
+
+	&-items
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		ul
+			margin-top: 0
+			padding: 0
+			list-style-type: none
+		h2
+			margin: 0
+			font-size: 18px
+			text-transform: uppercase
+			color: $greens
+			line-height: 24px
+			margin-bottom: 37px
+			letter-spacing: 1.4px
+	&_socials
+		display: flex
+		line-height: 24px
+		li
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+			a
+				color: $greens
+				font-size: 20px
+				transition: all 0.2s
+				&:hover
+					color: darken($greens, 25)
+	
+
+@media (max-width: 991.98px)
+	.footer
+		&-items
+			flex-direction: column
+			justify-content: center
+			text-align: center
+		&-first
+			margin-bottom: 60px
+		&_second
+			margin-bottom: 60px
+		&_third
+			&_list
+				margin-bottom: 40px
+		&_socials
+			justify-content: center
+			li
+				margin-right: 30px
+				a
+					font-size: 24px

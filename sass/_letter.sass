@@ -1,0 +1,69 @@
+.letter
+	color: #222
+	&-items
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+	&-item
+		flex-basis: 48%
+		&_title
+			margin: 0
+			font-size: 48px
+			margin-bottom: 25px
+			letter-spacing: 2px
+		&_text
+			font-family: $sanses
+			font-size: 15px
+			letter-spacing: 0.7px
+			line-height: 1.5
+		form
+			input
+				width: 100%
+				display: block
+				background-color: #333
+				padding: 15px 0
+				border: none
+				padding-left: 25px
+				border-radius: 5px
+				color: #fff
+				&::placeholder
+					color: #9191b5
+			button
+				width: 100%
+				background-color: $greens
+				color: #fff
+				border: none
+				padding: 15px 0
+				margin-top: 20px
+				border-radius: 5px
+				cursor: pointer
+				letter-spacing: 1px
+				transition: all 0.4s
+				&:hover
+					background-color: darken($greens, 15)
+
+
+@media (max-width: 991.98px)
+	.letter
+		&-items
+			flex-direction: column
+			text-align: center
+		&-item
+			&_text
+				max-width: 550px
+				margin-bottom: 50px
+			form
+				width: 440px
+
+@media (max-width: 575.98px)
+	.letter-item_title
+		font-size: 32px
+	.letter
+		&-item
+			&_text
+				max-width: 550px
+				margin-bottom: 50px
+			form
+				width: 240px
+
